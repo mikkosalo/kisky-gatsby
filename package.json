@@ -18,6 +18,7 @@
     "gatsby": "^2.26.1",
     "gatsby-image": "^2.8.0",
     "gatsby-plugin-emotion": "^5.1.0",
+    "gatsby-plugin-manifest": "^2.9.1",
     "gatsby-plugin-react-helmet": "^3.7.0",
     "gatsby-plugin-sass": "^2.8.0",
     "gatsby-plugin-sharp": "^2.11.2",
@@ -32,6 +33,7 @@
     "react-helmet": "^6.1.0",
     "react-spring": "^8.0.27",
     "react-spring-lightbox": "^1.4.11",
+    "simple-react-lightbox": "^3.5.2",
     "yarn": "^1.22.10"
   }
 }
