@@ -23,7 +23,7 @@ const StyledSection = styled.section`
   background: ${props => backgroundColorSelector(props.background)};
   color: ${props => textColorSelector(props.background)};
   text-align: center;
-  padding: 4em;
+  padding: 1em;
 
   h1, h2 {
     font-size: 3em;
@@ -48,6 +48,14 @@ const StyledSection = styled.section`
       background-clip: padding-box;
       z-index: 0;
     }
+  }
+
+  ul {
+    margin-bottom: 2em;
+  }
+
+  @media (min-width: 960px) {
+    padding: 4em;
   }
 `;
 

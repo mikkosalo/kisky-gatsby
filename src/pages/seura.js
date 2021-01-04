@@ -3,31 +3,7 @@ import Layout from '../components/Layout';
 import Section, { backgroundColorSelector } from '../components/Section';
 import styled from '@emotion/styled';
 import Box from '../components/Box';
-
-const Content = styled.div`
-  margin: auto;
-  max-width: 40%;
-`;
-
-const Table = styled.div`
-  display: inline-grid;
-  grid-template-columns: repeat(7, auto [col-start]);
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 6px;
-  background: rgba(0, 0, 0, 0.1);
-
-  span {
-    display: block;
-  }
-
-  div {
-    padding: .8em;
-  }
-
-  div:not(:last-child) {
-    border-right: 1px solid rgba(0, 0, 0, 0.15);
-  }
-`;
+import { Content } from './keivi';
 
 const ContentMenu = styled.div`
   position: sticky;
@@ -54,7 +30,7 @@ const ContentMenu = styled.div`
 // markup
 const Keivi = () => {
   return (
-    <Layout title="Kirkkonummen Seudun Kiipeilijät Ry">
+    <Layout title="Seura" description="Kirkkonummen Seudun Kiipeilijät Ry perustettiin vuonna 2014 paikallisten kiipeilijöiden toimesta">
       <ContentMenu>
         <a href="#saannot">Säännöt</a>
         <a href="#edut">Edut</a>
@@ -124,7 +100,7 @@ const Keivi = () => {
       <Section background="primary" id="edut">
         <h2>Edut</h2>
         <Box showOnlyTeaser>
-        <ul>
+          <ul>
             <li>SKIL jäsenseuroilla on maksutta (SKIL maksaa tämän seurojen puolesta) voimassa Pohjola/SLU:n TuplaTurva-vakuutus joka kattaa seuran toiminnanvastuuvakuutuksen, vapaaehtoistyön tapaturmavakuutuksen sekä seuratoiminnassa ja talkootoiminnassa tapahtuneet vahingot myös kolmannelle osapuolelle</li>
             <li>SKIL jäsenseurojen jäsenet saavat maksutta kolme kertaa vuodessa kotiinsa ”Kiipeily”-lehden</li>
             <li>jäsenseurat voivat liittyä SKIL:n koulutusjärjestelmään ja voivat kouluttaa jäseniään seinä- kalliokiipeily- ja jääkiipeilyn ohjaajiksi ja kouluttajiksi. KTO -koulutus on halvempaa SKIL jäsenseuran ohjaajille.</li>
@@ -148,13 +124,16 @@ const Keivi = () => {
           <p>Seuran jäsenmaksu koostuu liittymismaksusta, keivin käyttömaksusta, sekä Suomen Kiipeilyliiton (SKIL) jäsenmaksusta. Mikäli kuulut jo johonkin muuhun SKIL-seuraan riittää maksuksi pelkkä liittymismaksu + keivin käyttömaksu. Seuran jäsenyys edellyttää SKIL-jäsenyyttä.</p>
         </Content>
         <Box>
-          <h3>Aikuisjäsen: 105€/vuosi + 50€ liittymismaksu</h3>
-          <p><b>Sisältää:</b> 46€ keivin käyttömaksu + 59€ SKIL jäsenmaksu (sisältää kiipeilyvakuutuksen 39€, Kiipeily-lehden, yms) + Liittymismaksu 50€ (kertamaksu).</p>
-          <p>Jäsenen omat lapset, alle 10v: keivimaksu 0 €, mahdollinen SKIL-jäsenyys 48 € </p>
-          <h3>Junnujäsen (17 v. ja alle): 75€/vuosi + 50€ liittymismaksu</h3>
-          <p><b>Sisältää:</b> 22€ keivin käyttömaksu + 53€ SKIL jäsenmaksu  (sisältää kiipeilyvakuutuksen 39€, Kiipeily-lehden, yms).</p>
-          <h3>Keivijäsen: 46€/vuosi + 50€ liittymismaksu</h3>
-          <p>Keivin käyttömaksu, edellyttää jäsenyyttä jossain muussa SKILin alaisessa seurassa.</p>
+          <h3>Aikuisjäsen: 109/vuosi</h3>
+          <p><b>Sisältää:</b> 46€ keivin käyttömaksu + 63€ SKIL jäsenmaksu (sisältää kiipeilyvakuutuksen 43€, Kiipeily-lehden, yms).</p>
+          <p>Jäsenen omat lapset, alle 10v: keivimaksu 0€, mahdollinen SKIL-jäsenyys 57€</p>
+          <h3>Junnujäsen (17 v. ja alle): 79€/vuosi</h3>
+          <p><b>Sisältää:</b> 22€ keivin käyttömaksu + 57€ SKIL jäsenmaksu  (sisältää kiipeilyvakuutuksen 43€, Kiipeily-lehden, yms).</p>
+          <h3>Keivijäsen: 46€/vuosi</h3>
+          <p>Keivin käyttömaksu, edellyttää, että jäsen hoitaa itse oman vakuutusturvansa.</p>
+          <h3>Avainmaksu: 20€/vuosi</h3>
+          <p>Keivin avainten haltijat maksavat jäsenmaksun lisäksi vuotuisen avainmaksun, joka maksetaan jäsenmaksun yhteydessä.</p>
+          <p>Jos et halua pitää avaintasi tai haluat hyvittää avainmaksun isännöimällä vakiovuoroa, ota yhteyttä hallitukseen Slackissa tai sähköpostilla: seura@kisky.fi</p>
           <h3>Maksutiedot</h3>
           <p>
             <b>Saaja:</b> Kirkkonummen Seudun Kiipeilijät ry<br />

@@ -6,21 +6,34 @@ import GoogleMapReact from 'google-map-react';
 const ColumnLayout = styled.section`
   display: grid;
   bacgroud: #fff;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 100%;
+
+  @media (min-width: 960px) {
+    grid-template-columns: 50% 50%;
+  }
 `;
 
 const Column = styled.div`
   background: #FF9900;
-  padding: 4em;
+  padding: 1em;
   color: #fff;
 
   h1, h2 {
+    margin-top: 0;
     font-size: 2em;
+  }
+
+  @media (min-width: 800px) {
+    padding: 4em;
   }
 `;
 
 const MapColumn = styled.div`
-  min-height: 800px;
+  min-height: 500px;
+
+  @media (min-width: 960px) {
+    min-height: 800px;
+  }
 `;
 
 const MapPointerStyles = styled.div`
@@ -43,7 +56,7 @@ const MapPointer = () => {
 
 const Yhteystiedot = () => {
   return (
-    <Layout title="Kirkkonummen Seudun Kiipeilijät Ry">
+    <Layout title="Yhteystiedot" description="Kirkkonummen Seudun Kiipeilijät Ry">
       <ColumnLayout>
         <MapColumn>
           <GoogleMapReact

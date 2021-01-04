@@ -4,14 +4,20 @@ export function useHeight({ on = true } = {}) {
   const ref = useRef();
   const [height, set] = useState(0);
   const heightRef = useRef(height);
+
   const [ro] = useState(
-    () =>
-      new ResizeObserver(packet => {
+    () => {
+      if (typeof ResizeObserver === 'undefined') {
+        return [ref, height];
+      }
+
+      return new ResizeObserver(packet => {
         if (ref.current && heightRef.current !== ref.current.offsetHeight) {
           heightRef.current = ref.current.offsetHeight;
           set(ref.current.offsetHeight);
         }
       })
+    }
   );
   useLayoutEffect(() => {
     if (on && ref.current) {
@@ -19,7 +25,7 @@ export function useHeight({ on = true } = {}) {
       ro.observe(ref.current, {});
     }
     return () => ro.disconnect();
-  }, [on, ref.current]);
+  }, [on, ro]);
 
   return [ref, height];
 }

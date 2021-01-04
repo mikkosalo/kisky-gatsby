@@ -2,6 +2,7 @@ import * as React from 'react';
 import Navigation from './Navigation';
 import styled from '@emotion/styled';
 import { Link } from 'gatsby';
+import Seo from './Seo';
 
 const Main = styled.main`
   padding: 0;
@@ -13,8 +14,11 @@ const Main = styled.main`
 
 const Nav = styled.nav`
   background: #fff;
-  display: flex;
-  background: #fff;
+  text-align: center;
+
+  @media (min-width: 800px) {
+    display: flex;
+  }
 `;
 
 const Footer = styled.footer`
@@ -33,6 +37,7 @@ const Logo = styled.div`
   margin: 0;
   z-index: 10;
   font-weight: bold;
+  text-align: left;
 
   a {
     text-decoration: none;
@@ -54,11 +59,12 @@ const Logo = styled.div`
   }
 `;
 
-const Layout = ({ children, title }) => {
+const Layout = ({ children, title, description }) => {
   const year = new Date().getFullYear();
 
   return (
     <Main>
+      <Seo title={title} description={description} />
       <Nav className="navigation">
         <Logo className="logo">
           <Link to="/">Ki<i>s</i>ky<span>Kirkkonummen Seudun Kiipeilijät Ry</span></Link>

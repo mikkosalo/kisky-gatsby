@@ -10,13 +10,10 @@ const menuItems = [
 ];
 
 const MenuContainer = styled.div`
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  justify-content: flex-end;
+  justify-content: center;
   display: flex;
   flex: 1 1 auto;
-  padding-right: 2em;
+  flex-wrap: wrap;
 
   a {
     padding: 1em;
@@ -34,6 +31,11 @@ const MenuContainer = styled.div`
     &.active {
       color: black;
     }
+  }
+
+  @media (min-width: 800px) {
+    justify-content: flex-end;
+    padding-right: 2em;
   }
 `;
 

@@ -1,40 +1,105 @@
-import * as React from 'react';
+import React from 'react';
+import SimpleReactLightbox, { SRLWrapper } from 'simple-react-lightbox';
 import Layout from '../components/Layout';
 import Section from '../components/Section';
 import styled from '@emotion/styled';
 import Box from '../components/Box';
+import { graphql } from 'gatsby';
 
-const Content = styled.div`
+export const Content = styled.div`
   margin: auto;
-  max-width: 40%;
+  max-width: 800px;
 `;
 
 const Table = styled.div`
-  display: inline-grid;
-  grid-template-columns: repeat(7, auto [col-start]);
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 6px;
   background: rgba(0, 0, 0, 0.1);
+  font-weight: bold;
 
   span {
-    display: block;
+    font-weight: normal;
+
+    &:after {
+      content: ':  '
+    }
   }
 
   div {
-    padding: .8em;
+    padding: .2em;
   }
 
   div:not(:last-child) {
-    border-right: 1px solid rgba(0, 0, 0, 0.15);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  }
+
+  @media (min-width: 800px) {
+    display: inline-grid;
+    grid-template-columns: repeat(7, auto [col-start]);
+
+    span {
+      display: block;
+
+      &:after {
+        content: ''
+      }
+    }
+
+    div {
+      padding: .8em;
+    }
+
+    div:not(:last-child) {
+      border-right: 1px solid rgba(0, 0, 0, 0.15);
+      border-bottom: 0;
+    }
   }
 `;
 
+const GalleryContainer = styled.div`
+  margin-top: 70px;
+
+  a {
+    margin: 5px;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+    transition: transform .4s cubic-bezier(.165,.84,.44,1);
+    display: inline-block;
+    padding: 0;
+    opacity: 0.8;
+    
+    img {
+      vertical-align: bottom;
+    }
+
+    &:hover {
+      opacity: 1;
+      transform: scale(1.1);
+    }
+  }
+`;
+
+const ImageGallery = ({ images }) => {
+  return (
+    <GalleryContainer>
+      <SRLWrapper>
+        {images.map((image) => {
+          return (
+            <a href={image.node.full.fluid.src}>
+              <img src={image.node.thumb.fluid.src} alt="Keivi" />
+            </a>
+          );
+        })}
+      </SRLWrapper>
+    </GalleryContainer>
+  );
+};
 
 // markup
 const Keivi = (props) => {
-  console.log(props);
   return (
-    <Layout title="Kirkkonummen Seudun Kiipeilijät Ry">
+    <Layout title="Keivi" description="Keivi sijaitsee Masalan Monitoimitalon ja kirjaston rakennuksessa, se tarjoaa monipuolisen boulderseinän niin vasta-alkajalle, kuin kokoneellekkin kiikkujalle.">
       <Section background="primary">
         <Content>
           <h1>Keivi</h1>
@@ -42,14 +107,17 @@ const Keivi = (props) => {
           <h3>Keivin aukioloajat 2020-2021:</h3>
           <Table>
             <div><span>Ma</span>15-22</div>
-            <div><span>Ti</span>15-22</div>
-            <div><span>Ke</span>15-22</div>
-            <div><span>To</span>15-22</div>
+            <div><span>Ti</span>8-22</div>
+            <div><span>Ke</span>16.30-22</div>
+            <div><span>To</span>8-22</div>
             <div><span>Pe</span>15-22</div>
-            <div><span>La</span>15-22</div>
-            <div><span>Su</span>15-22</div>
+            <div><span>La</span>9-15.30</div>
+            <div><span>Su</span>9-20</div>
           </Table>
         </Content>
+        <SimpleReactLightbox>
+          <ImageGallery images={props.data.allFile.edges} />
+        </SimpleReactLightbox>
       </Section>
       <Section background="light">
         <h2>Keivin säännöt</h2>
@@ -85,43 +153,23 @@ const Keivi = (props) => {
 
 export default Keivi;
 
-export const squareImage = graphql`
-  fragment squareImage on File {
-    thumb: childImageSharp {
-      fluid(maxWidth: 200, maxHeight: 200) {
-        ...GatsbyImageSharpFluid
-      }
-    }
-  }
-`;
-
-export const fullImage = graphql`
-  fragment fullImage on File {
-    full: childImageSharp {
-      fluid(maxWidth: 1920) {
-        ...GatsbyImageSharpFluid
-      }
-    }
-  }
-`;
-
 export const imagesQuery = graphql`
   query images {
-    keivi1: file(relativePath: { eq: "keivi-1.jpg" }) {
-      ...fullImage
-      ...squareImage
-    }
-    keivi2: file(relativePath: { eq: "keivi-2.jpg" }) {
-      ...fullImage
-      ...squareImage
-    }
-    keivi3: file(relativePath: { eq: "keivi-3.jpg" }) {
-      ...fullImage
-      ...squareImage
-    }
-    keivi4: file(relativePath: { eq: "keivi-4.jpg" }) {
-      ...fullImage
-      ...squareImage
+    allFile(filter: { relativeDirectory: { eq: "gallery" } }) {
+      edges {
+        node {
+          thumb: childImageSharp {
+            fluid(maxWidth: 200, maxHeight: 200) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+          full: childImageSharp {
+            fluid(maxWidth: 1920) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
     }
   }
 `;

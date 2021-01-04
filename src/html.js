@@ -14,6 +14,10 @@ const Body = styled.body`
   font-size: 20px;
   margin: 0;
   padding: 0;
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "pt-sans-narrow",sans-serif;
+  }
 `;
 
 export default function HTML(props) {
