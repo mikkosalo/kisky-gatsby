@@ -104,7 +104,7 @@ const Keivi = (props) => {
         <Content>
           <h1>Keivi</h1>
           <p>Keivi sijaitsee Masalan Monitoimitalon ja kirjaston rakennuksessa, se tarjoaa monipuolisen boulderseinän niin vasta-alkajalle, kuin kokoneellekkin kiikkujalle. Käytössämme on mm. Moon Board, johon löytyy yli 8000 valmista reittiä! Keivi on vain seuran jäsenille. Ota meihin yhteyttä seuran jäsenyys kiinnostaa!</p>
-          <h3>Keivin aukioloajat 2020-2021:</h3>
+          <h3>Keivin aukioloajat 10.1.2021-30.6.2021:</h3>
           <Table>
             <div><span>Ma</span>15-22</div>
             <div><span>Ti</span>8-22</div>
@@ -114,6 +114,16 @@ const Keivi = (props) => {
             <div><span>La</span>9-15.30</div>
             <div><span>Su</span>9-20</div>
           </Table>
+          <h3>Vakiovuorot ja lähetysillat</h3>
+          <p>Vakiovuoroja ja lähetysiltoja ei ole sovittu kevätkaudulle 2021.</p>
+        </Content>
+      </Section>
+      <Section background="warning">
+        <Content>
+        <h2>Kulku keiville</h2>
+          <p>Keiville pääsee Masalan nuorisotilan kautta pyytämällä valvojaa avaamaan oven. Nuorisotilan aukioloajat: <a href="https://www.kirkkonummi.fi/masalan-monitoimitalon-nuorisotila">www.kirkkonummi.fi/masalan-monitoimitalon-nuorisotila</a>. Muina aikoina avainten haltijoita voi pyytää avaamaan oven seuran keskustelukanavalla.</p>
+        <h3>Keivin avaimet</h3>
+          <p>Seuralla on vain rajallinen määrä keivin avaimia. Avaimet jaetaan hakemusten perusteella seuran syyskokouksessa vuodeksi kerrallaan. Avainten haltijoilta veloitetaan vuotuinen avainmaksu.</p>
         </Content>
         <SimpleReactLightbox>
           <ImageGallery images={props.data.allFile.edges} />
@@ -121,7 +131,7 @@ const Keivi = (props) => {
       </Section>
       <Section background="light">
         <h2>Keivin säännöt</h2>
-        <Box>
+        <Box showOnlyTeaser>
             <p>TÄSSÄ RAKENNUKSESSA PÄIHDYTTÄVIEN AINEIDEN NAUTTIMINEN SEKÄ TUPAKOINTI OVAT EHDOTTOMASTI KIELLETTYÄ!</p>
             <p>KIIPEILY PÄIHTYNEENÄ SEKÄ HUUMAUSAINEIDEN TAI NIIHIN LUOKITELTAVIEN AINEIDEN ALAISENA ON KIELLETTY.</p>
             <p>Sinun tulee lukea ja noudattaa kiipeilytilan sääntöjä, sekä noudattaa tilanvalvojan sekä nuoriso-ohjaajan ohjeita.</p>
