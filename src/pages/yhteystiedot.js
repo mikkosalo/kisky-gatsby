@@ -61,7 +61,8 @@ const Yhteystiedot = () => {
           <h1>Yhteystiedot</h1>
           <p>Tavoitat meidät parhaiten lähettämällä sähköpostia osoitteeseen: <b>seura@kisky.fi</b></p>
           <h2>Keivi</h2>
-          <p>Keivi sijaitsee Masalan monitoimitalon ja kirjaston rakennuksessa osoitteessa: Sundsbergintie 1, 02430 Kirkkonummi</p>
+          <p>Keivi sijaitsee Masalan monitoimitalon ja kirjaston rakennuksessa osoitteessa: Puolukkamäki 7, 02430 Kirkkonummi</p>
+          <p>Ajo henkilöautolla tapahtuu Sundbergintien ja Masalantien liikenneympyrästä kohti lounasta, jonka jälkeen käännös Puolukkamäki -nimiselle tielle. Jatka tien päähän asti ja käänny vasemmalle kohti parkkipaikkoja. Keivi on Masalan monitoimitalon kaakkoispäädyssä. Nuorisotila toimii rakennuksen luoteispäädyssä, lähellä liikenneympyrää.</p>
           <p>Mikäli kiipeily keivillä kiinnostaa, otathan meihin yhteyttä.</p>
         </Column>
       </ColumnLayout>
