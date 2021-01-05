@@ -41,8 +41,8 @@ const IndexPage = (props) => {
       <ColumnLayout>
         <Column>
           <h1>Kirkkonummen Seudun Kiipeilijät Ry</h1>
-          <p>Seura perustettiin vuonna 2014, kun ryhmä lähiseudun kiipeilijöitä kokoontuita yhteen rakentaakseen Masalan monitoimitaloon boulderkiipeilytilan eli lyhyesti ’Masalan keivin’.</p>
-          <p>Seuran toiminta pyörii tällä hetkellä keivin ympärillä, tarjoten jäsenilleen talvikauden harjoittelutilan boulderkiipeilyseinien muodossa. Keväästä syksyyn toiminta tapahtuu pääasiassa ulkokallioilla.</p>
+          <p>Seura perustettiin vuonna 2014, kun ryhmä lähiseudun kiipeilijöitä kokoontui yhteen rakentaakseen Masalan monitoimitaloon boulderkiipeilytilan eli lyhyesti ’Masalan keivin’.</p>
+          <p>Seuran toiminta pyörii keivin ympärillä, tarjoten jäsenilleen talvikauden harjoittelutilan boulderkiipeilyseinien muodossa. Keväästä syksyyn toiminta tapahtuu pääasiassa ulkokallioilla.</p>
           <Button to="/seura/" color="white">Seura</Button> <Button to="/keivi/" color="white">Keivi</Button>
         </Column>
         <ImageColumn>
