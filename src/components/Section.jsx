@@ -52,6 +52,10 @@ const StyledSection = styled.section`
 
   ul {
     margin-bottom: 2em;
+    
+    li {
+      margin-bottom: .3em;
+    }
   }
 
   @media (min-width: 960px) {

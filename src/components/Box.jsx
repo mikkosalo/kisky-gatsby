@@ -7,7 +7,7 @@ import Button from './Button';
 const StyledBox = styled.div`
   border-radius: 8px;
   background: #fff;
-  max-width: 50em;
+  max-width: 48em;
   padding: 2em;
   box-sizing: border-box;
   margin: auto;
@@ -42,7 +42,7 @@ const Box = ({ children, showOnlyTeaser }) => {
   const slideInStyles = useSpring({
     from: { height: 320 },
     to: {
-      height: show ? height : 320
+      height: show ? height + 30 : 320
     }
   });
 
