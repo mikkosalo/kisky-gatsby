@@ -60,7 +60,7 @@ const Yhteystiedot = () => {
       <ColumnLayout>
         <MapColumn>
           <GoogleMapReact
-            bootstrapURLKeys={{ key: 'AIzaSyCJNUoIjM9AJkMUT45bMNF1Wq6Au_guuM4' }}
+            bootstrapURLKeys={{ key: process.env.GOOGLE_MAPS_API_KEY }}
             defaultCenter={{
               lat: 60.15454680117031,
               lng: 24.53060123527664

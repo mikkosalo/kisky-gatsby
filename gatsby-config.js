@@ -42,6 +42,12 @@ module.exports = {
       }
     },
     {
+      resolve: `gatsby-plugin-env-variables`,
+      options: {
+        allowList: ["GOOGLE_MAPS_API_KEY"]
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
           name: `Kirkkonummen Seudun Kiipeilijät Ry`,

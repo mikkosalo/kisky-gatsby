@@ -1,0 +1,24 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 12
+    commands:
+      - yarn install --production --disable-progress
+  pre_build:
+    commands:
+       - yarn build
+  build:
+    commands:
+       - aws s3 sync public s3://$S3_BUCKET --delete --acl public-read
+  post_build:
+    commands:
+       - aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRIBUTION --paths "/*"
+       - echo Build completed on `date` with environment variable $ACTIVE_ENV
+       - echo Transferred to s3 environment $S3_BUCKET
+cache:
+  paths:
+      - '.cache/*'
+      - 'node_modules/*'
+      - 'public/*'
