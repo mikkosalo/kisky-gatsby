@@ -12,18 +12,23 @@ const ContentMenu = styled.div`
   text-align: center;
   border-bottom: 2px solid rgba(255, 255, 255, 0.1);
   z-index: 10;
+  display: none;
 
   a {
-    padding: .9em;
+    font-size: 1.1em;
+    padding: 1em;
     display: inline-block;
     color: #fff;
     text-decoration: none;
-    font-size: 1.2em;
     transition: all .2s ease-in-out;
 
     &:hover {
       background: rgba(255, 255, 255, 0.1);
     }
+  }
+
+  @media (min-width: 600px) {
+    display: block;
   }
 `;
 

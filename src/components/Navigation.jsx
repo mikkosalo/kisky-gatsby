@@ -16,7 +16,8 @@ const MenuContainer = styled.div`
   flex-wrap: wrap;
 
   a {
-    padding: 1em;
+    font-size: .85em;
+    padding: 1rem;
     text-decoration: none;
     color: #696969;
     align-self: center;
@@ -30,6 +31,11 @@ const MenuContainer = styled.div`
 
     &.active {
       color: black;
+    }
+
+    @media (min-width: 600px) {
+      font-size: 1.1em;
+      padding: 1rem 1.5rem;
     }
   }
 

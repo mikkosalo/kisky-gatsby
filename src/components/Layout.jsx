@@ -30,7 +30,7 @@ const Footer = styled.footer`
 const Logo = styled.div`
   font-size: 2.4em;
   line-height: 1;
-  padding: .5em 1em;
+  padding: 1rem 1rem;
   color: #424242;
   text-transform: uppercase;
   box-sizing: border-box;
