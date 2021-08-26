@@ -121,16 +121,18 @@ const Keivi = (props) => {
            <div><span>Su</span>16-18</div>
           </Table>
           <h3>Koronarajoituksista lyhyesti</h3>
-          <p>Keivi on avoinna seuralaisten käyttöön! Voit varata itsellesi yksityisajan tai osallistua toimintaan henkilömäärärajoitusten puitteissa.</p>
-          <ul>
-            <li>Keivin käyttö on sallittua käyttövuorojen aikana.</li>>
-            <li>Älä tule keiville, jos sinulla on edes lieviä flunssan oireita.</li>
-            <li>Keivin tiloissa saa olla maksimissaan kuusi henkilöä edellyttäen, että 2 metrin turvaväli pystytään säilyttämään.</li>
-            <li>Pese kätesi ennen keiville tuloa.</li>
-            <li>Yksi kiipeilijä seinän sektoria kohden. Muut kuin kiipeilijät odottavat käytävän puolella.</li>
-            <li>Kiipeilysuorituksen aikana ei tarvitse käyttää maskia. Muita kehotetaan pitämään suosituksen mukaisesti maskia.</li>
-            <li>Desinfioi käyttämäsi treenivälineet. Otteita ei desinfioida joka kerta, jotta niihin ei kerry tarpeettomasti liukastavia aineita. Desinfiointiainetta sekä käsille että varusteille on tarjolla keivillä.</li>
-          </ul>
+          <Box>
+            <p>Keivi on avoinna seuralaisten käyttöön! Voit varata itsellesi yksityisajan tai osallistua toimintaan henkilömäärärajoitusten puitteissa.</p>
+            <ul>
+              <li>Keivin käyttö on sallittua käyttövuorojen aikana.</li>
+              <li>Älä tule keiville, jos sinulla on edes lieviä flunssan oireita.</li>
+              <li>Keivin tiloissa saa olla maksimissaan kuusi henkilöä edellyttäen, että 2 metrin turvaväli pystytään säilyttämään.</li>
+              <li>Pese kätesi ennen keiville tuloa.</li>
+              <li>Yksi kiipeilijä seinän sektoria kohden. Muut kuin kiipeilijät odottavat käytävän puolella.</li>
+              <li>Kiipeilysuorituksen aikana ei tarvitse käyttää maskia. Muita kehotetaan pitämään suosituksen mukaisesti maskia.</li>
+              <li>Desinfioi käyttämäsi treenivälineet. Otteita ei desinfioida joka kerta, jotta niihin ei kerry tarpeettomasti liukastavia aineita. Desinfiointiainetta sekä käsille että varusteille on tarjolla keivillä.</li>
+            </ul>
+          </Box>
         </Content>
       </Section>
       <Section background="warning">
