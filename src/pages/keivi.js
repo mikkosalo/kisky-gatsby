@@ -5,11 +5,7 @@ import Section from '../components/Section';
 import styled from '@emotion/styled';
 import Box from '../components/Box';
 import { graphql } from 'gatsby';
-
-export const Content = styled.div`
-  margin: auto;
-  max-width: 800px;
-`;
+import Content from '../components/Content';
 
 const Table = styled.div`
   border: 1px solid rgba(0, 0, 0, 0.15);

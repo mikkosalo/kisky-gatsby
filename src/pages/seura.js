@@ -3,7 +3,7 @@ import Layout from '../components/Layout';
 import Section, { backgroundColorSelector } from '../components/Section';
 import styled from '@emotion/styled';
 import Box from '../components/Box';
-import { Content } from './keivi';
+import Content from '../components/Content';
 
 const ContentMenu = styled.div`
   position: sticky;
