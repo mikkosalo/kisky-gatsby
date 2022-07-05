@@ -80,9 +80,9 @@ const ImageGallery = ({ images }) => {
   return (
     <GalleryContainer>
       <SRLWrapper>
-        {images.map((image) => {
+        {images.map((image,i) => {
           return (
-            <a href={image.node.full.fluid.src}>
+            <a href={image.node.full.fluid.src} key={i}>
               <img src={image.node.thumb.fluid.src} alt="Keivi" />
             </a>
           );

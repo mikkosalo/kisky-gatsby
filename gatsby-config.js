@@ -24,14 +24,6 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    {
-      resolve: "gatsby-plugin-web-font-loader",
-      options: {
-        typekit: {
-          id: process.env.TYPEKIT_ID,
-        },
-      },
-    },
     'gatsby-transformer-sharp',
     {
       resolve: 'gatsby-plugin-sharp',
