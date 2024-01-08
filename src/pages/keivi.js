@@ -100,35 +100,16 @@ const Keivi = (props) => {
         <Content>
           <h1>Keivi</h1>
           <p>Keivi sijaitsee Masalan Monitoimitalon ja kirjaston rakennuksessa, se tarjoaa monipuolisen boulderseinän niin vasta-alkajalle, kuin kokoneellekkin kiikkujalle. Käytössämme on mm. Moon Board, johon löytyy yli 8000 valmista reittiä! Keivi on vain seuran jäsenille. Ota meihin yhteyttä seuran jäsenyys kiinnostaa!</p>
-          <h3>Keivin aukioloajat 16.8.2021-22.5.2022:</h3>
+          <h3>Keivin aukioloajat:</h3>
           <Table>
-            <div><span>Ma</span>15-22</div>
+            <div><span>Ma</span>7-15 ja 18-22</div>
             <div><span>Ti</span>7-22</div>
-            <div><span>Ke</span>16.30-22</div>
-            <div><span>To</span>8-22</div>
-            <div><span>Pe</span>15-22</div>
-            <div><span>La</span>9-15.30</div>
-            <div><span>Su</span>9-20</div>
+            <div><span>Ke</span>7-15 ja 18-22</div>
+            <div><span>To</span>7-22</div>
+            <div><span>Pe</span>7-15 ja 18-22</div>
+            <div><span>La</span>7-15 ja 18-22</div>
+            <div><span>Su</span>7-22</div>
           </Table>
-          <h3>Vakiovuorot ja lähetysillat</h3>
-          <p>Syksyllä 2021 vakiovuorot alkavat 1.9. ja jatkuvat vuoden loppuun asti.</p>
-          <Table>
-           <div><span>Ke</span>18-20</div>
-           <div><span>Su</span>16-18</div>
-          </Table>
-          <h3>Koronarajoituksista lyhyesti</h3>
-          <Box>
-            <p>Keivi on avoinna seuralaisten käyttöön! Voit varata itsellesi yksityisajan tai osallistua toimintaan henkilömäärärajoitusten puitteissa.</p>
-            <ul>
-              <li>Keivin käyttö on sallittua käyttövuorojen aikana.</li>
-              <li>Älä tule keiville, jos sinulla on edes lieviä flunssan oireita.</li>
-              <li>Keivin tiloissa saa olla maksimissaan kuusi henkilöä edellyttäen, että 2 metrin turvaväli pystytään säilyttämään.</li>
-              <li>Pese kätesi ennen keiville tuloa.</li>
-              <li>Yksi kiipeilijä seinän sektoria kohden. Muut kuin kiipeilijät odottavat käytävän puolella.</li>
-              <li>Kiipeilysuorituksen aikana ei tarvitse käyttää maskia. Muita kehotetaan pitämään suosituksen mukaisesti maskia.</li>
-              <li>Desinfioi käyttämäsi treenivälineet. Otteita ei desinfioida joka kerta, jotta niihin ei kerry tarpeettomasti liukastavia aineita. Desinfiointiainetta sekä käsille että varusteille on tarjolla keivillä.</li>
-            </ul>
-          </Box>
         </Content>
       </Section>
       <Section background="warning">
