@@ -102,12 +102,12 @@ const Keivi = (props) => {
           <p>Keivi sijaitsee Masalan Monitoimitalon ja kirjaston rakennuksessa, se tarjoaa monipuolisen boulderseinän niin vasta-alkajalle, kuin kokoneellekkin kiikkujalle. Käytössämme on mm. Moon Board, johon löytyy yli 8000 valmista reittiä! Keivi on vain seuran jäsenille. Ota meihin yhteyttä seuran jäsenyys kiinnostaa!</p>
           <h3>Keivin aukioloajat:</h3>
           <Table>
-            <div><span>Ma</span>7-15 ja 18-22</div>
+            <div><span>Ma</span>7-15 ja <br/>18-22</div>
             <div><span>Ti</span>7-22</div>
-            <div><span>Ke</span>7-15 ja 18-22</div>
+            <div><span>Ke</span>7-15 ja <br/>18-22</div>
             <div><span>To</span>7-22</div>
-            <div><span>Pe</span>7-15 ja 18-22</div>
-            <div><span>La</span>7-15 ja 18-22</div>
+            <div><span>Pe</span>7-15 ja <br/>18-22</div>
+            <div><span>La</span>7-15 ja <br/>18-22</div>
             <div><span>Su</span>7-22</div>
           </Table>
         </Content>
