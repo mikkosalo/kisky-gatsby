@@ -51,16 +51,16 @@ const Keivi = () => {
       </Section>
 
       <Section background="light" id="jasenmaksut">
-        <h2>Jäsenmaksut 2021</h2>
+        <h2>Jäsenmaksut 2024</h2>
         <Content>
           <p>Seuran jäsenmaksu koostuu keivin käyttömaksusta, Suomen Kiipeilyliiton (SKIL) jäsenmaksusta, sekä mahdollisesta avainmaksusta. Suomen kiipeilyliiton jäsenet on vakuutettu Pohjolan <a href="http://climbing.fi/content/kiipeilyvakuutus">Sporttiturva-vakuutuksella</a>, joka korvaa kiipeilyn aikana aiheutuneita henkilövahinkoja. Voit halutessasi liittyä myös ainoastaan ns. keivijäseneksi ilman Suomen Kiipeilyliiton jäsenyyttä, jolloin vastaat itse vakuutusturvastasi. Keivin avaimen haltijat maksavat lisäksi vuotuisen avaimen hallintamaksun.</p>
         </Content>
         <Box>
-          <h3>Aikuisjäsen: 109 €/vuosi</h3>
-          <p><b>Sisältää:</b> 46 € keivin käyttömaksu + 63 € SKIL jäsenmaksu (sisältää kiipeilyvakuutuksen 43 €, Kiipeily-lehden, yms).</p>
-          <p>Jäsenen omat lapset, alle 10v: keivimaksu 0 €, mahdollinen SKIL-jäsenyys 57 € </p>
-          <h3>Junnujäsen (17 v. ja alle): 79 €/vuosi</h3>
-          <p><b>Sisältää:</b> 22 € keivin käyttömaksu + 57 € SKIL jäsenmaksu  (sisältää kiipeilyvakuutuksen 43 €, Kiipeily-lehden, yms).</p>
+          <h3>Aikuisjäsen: 117 €/vuosi</h3>
+          <p><b>Sisältää:</b> 46 € keivin käyttömaksu + 71 € SKIL jäsenmaksu (sisältää mm. kiipeilyvakuutuksen).</p>
+          <p>Jäsenen omat lapset, alle 10v: keivimaksu 0 €, mahdollinen SKIL-jäsenyys 65 € </p>
+          <h3>Junnujäsen (17 v. ja alle): 87 €/vuosi</h3>
+          <p><b>Sisältää:</b> 22 € keivin käyttömaksu + 65 € SKIL jäsenmaksu  (sisältää mm. kiipeilyvakuutuksen).</p>
           <h3>Keivijäsen: 46 €/vuosi</h3>
           <p>Ainoastaan keivin käyttömaksu. Jäsen vastaa omasta vakuutuksestaan.</p>
           <h3>Avainmaksu: 20 €/vuosi</h3>
@@ -69,7 +69,7 @@ const Keivi = () => {
           <p>
             <b>Saaja:</b> Kirkkonummen Seudun Kiipeilijät ry<br />
             <b>Tilinumero (IBAN):</b> FI66 3939 0057 5729 01, <b>BIC:</b> SBANFIHH<br />
-            <b>Viesti:</b> Jäsenmaksu 2021 + Oma Nimi
+            <b>Viesti:</b> Jäsenmaksu + Oma Nimi
           </p>
           <h3>Keivin avaimet</h3>
           <p>Avainten rajallisesta määrästä johtuen, avaimet jaetaan vuosittain hakemusten perusteella syyskokouksen yhteydessä vuodeksi kerrallaan. Myös nykyisten avainten haltijoiden tulee hakea avaimen hallintaa vuosittain.</p>
