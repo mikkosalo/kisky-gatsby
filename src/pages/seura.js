@@ -51,17 +51,19 @@ const Keivi = () => {
       </Section>
 
       <Section background="light" id="jasenmaksut">
-        <h2>Jäsenmaksut 2024</h2>
+        <h2>Jäsenmaksut 2025</h2>
         <Content>
           <p>Seuran jäsenmaksu koostuu keivin käyttömaksusta, Suomen Kiipeilyliiton (SKIL) jäsenmaksusta, sekä mahdollisesta avainmaksusta. Suomen kiipeilyliiton jäsenet on vakuutettu Pohjolan <a href="http://climbing.fi/content/kiipeilyvakuutus">Sporttiturva-vakuutuksella</a>, joka korvaa kiipeilyn aikana aiheutuneita henkilövahinkoja. Voit halutessasi liittyä myös ainoastaan ns. keivijäseneksi ilman Suomen Kiipeilyliiton jäsenyyttä, jolloin vastaat itse vakuutusturvastasi. Keivin avaimen haltijat maksavat lisäksi vuotuisen avaimen hallintamaksun.</p>
         </Content>
         <Box>
-          <h3>Aikuisjäsen: 117 €/vuosi</h3>
-          <p><b>Sisältää:</b> 46 € keivin käyttömaksu + 71 € SKIL jäsenmaksu (sisältää mm. kiipeilyvakuutuksen).</p>
-          <p>Jäsenen omat lapset, alle 10v: keivimaksu 0 €, mahdollinen SKIL-jäsenyys 65 € </p>
-          <h3>Junnujäsen (17 v. ja alle): 87 €/vuosi</h3>
-          <p><b>Sisältää:</b> 22 € keivin käyttömaksu + 65 € SKIL jäsenmaksu  (sisältää mm. kiipeilyvakuutuksen).</p>
+          <h3>Aikuisjäsen: 134 €/vuosi</h3>
+          <p><b>Sisältää:</b> 46 € keivin käyttömaksu + 88 € SKIL jäsenmaksu (sisältää mm. kiipeilyvakuutuksen).</p>
+          <p>Jäsenen omat lapset, alle 10v: keivimaksu 0 €, mahdollinen SKIL-jäsenyys 82 € </p>
+          <h3>Junnujäsen (17 v. ja alle): 104 €/vuosi</h3>
+          <p><b>Sisältää:</b> 22 € keivin käyttömaksu + 82 € SKIL jäsenmaksu  (sisältää mm. kiipeilyvakuutuksen).</p>
           <h3>Keivijäsen: 46 €/vuosi</h3>
+          <p>Ainoastaan keivin käyttömaksu. Jäsen vastaa omasta vakuutuksestaan.</p>
+          <h3>Junnu keivijäsen (17 v. ja alle): 22 €/vuosi</h3>
           <p>Ainoastaan keivin käyttömaksu. Jäsen vastaa omasta vakuutuksestaan.</p>
           <h3>Avainmaksu: 20 €/vuosi</h3>
           <p>Vuosittainen avaimen hallinnasta veloitettava maksu. Maksun voi myös kompensoida isännöimällä viikoittaista vakiovuoroa 10 krt vuodessa.</p>
