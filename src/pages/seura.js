@@ -61,10 +61,12 @@ const Keivi = () => {
           <p>Jäsenen omat lapset, alle 10v: keivimaksu 0 €, mahdollinen SKIL-jäsenyys 82 € </p>
           <h3>Junnujäsen (17 v. ja alle): 104 €/vuosi</h3>
           <p><b>Sisältää:</b> 22 € keivin käyttömaksu + 82 € SKIL jäsenmaksu  (sisältää mm. kiipeilyvakuutuksen).</p>
+          <p>Alle 10v: keivimaksu 0 €, mahdollinen SKIL-jäsenyys 82 €</p>
           <h3>Keivijäsen: 46 €/vuosi</h3>
           <p>Ainoastaan keivin käyttömaksu. Jäsen vastaa omasta vakuutuksestaan.</p>
-          <h3>Junnu keivijäsen (17 v. ja alle): 22 €/vuosi</h3>
+          <h3>Junnu keivijäsen (10-17 v): 22 €/vuosi</h3>
           <p>Ainoastaan keivin käyttömaksu. Jäsen vastaa omasta vakuutuksestaan.</p>
+          <p>Alle 10v: keivimaksu 0 €</p>
           <h3>Avainmaksu: 20 €/vuosi</h3>
           <p>Vuosittainen avaimen hallinnasta veloitettava maksu. Maksun voi myös kompensoida isännöimällä viikoittaista vakiovuoroa 10 krt vuodessa.</p>
           <h3>Maksutiedot</h3>
